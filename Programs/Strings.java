@@ -41,23 +41,6 @@
 //     }
 // }
 
-// class Strings{
-//     public static void main(String[] args){
-//         String str = "abacDd";
-//         int[] hash = new int[128];
-//         for(int i = 0; i < str.length(); i++){
-//             char ch = str.charAt(i);
-//             int pos = ch;
-//             hash[pos]++;
-//         }
-//         for(int j = 0; j < hash.length; j++){
-//             if(hash[j] == 1){
-//                 System.out.println((char)j);
-//             }
-//         }
-//     }
-// }
-
 class Strings{
     public static void main(String[] args){
         String str = "abacDd";
@@ -67,9 +50,26 @@ class Strings{
             int pos = ch;
             hash[pos]++;
         }
-        if(hash[j] > 1){
-            str.replace((char)j, '');
-            System.out.print(str);
+        for(int j = 0; j < hash.length; j++){
+            if(hash[j] == 1){
+                System.out.println((char)j);
+            }
         }
     }
 }
+
+// class Strings{
+//     public static void main(String[] args){
+//         String str = "abacDd";
+//         int[] hash = new int[128];
+//         for(int i = 0; i < str.length(); i++){
+//             char ch = str.charAt(i);
+//             int pos = ch;
+//             hash[pos]++;
+//         }
+//         if(hash[j] > 1){
+//             str.replace((char)j, '');
+//             System.out.print(str);
+//         }
+//     }
+// }
