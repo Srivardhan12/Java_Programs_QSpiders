@@ -1,6 +1,4 @@
-if(count == 26){
-        //     System.out.println("Panagram");
-        // }
-        // else{
-        //     System.out.println("Not");
-        // }
+nt val = getValue(ch);
+                if(str.charAt(i + 1) == '\0') break;
+                val -= val * 2;
+                result +=

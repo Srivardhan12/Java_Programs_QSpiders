@@ -69,5 +69,6 @@ class Strings_2{
                 return;
             }
         }
+        System.out.println("Isomorphic");
     }
 }
